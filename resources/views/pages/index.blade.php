@@ -24,7 +24,7 @@
                             $time = $theme->last_answer;
                             $date = new DateTime();
                             $date->setTimestamp($time);
-                            echo $date->format("m-d-Y H:i:s");
+                            echo $date->format("d-m-Y H:i:s");
                         ?>
                         </td>
                     </tr>
@@ -35,9 +35,4 @@
         <p>Не найдено</p>
     @endif
     {{$themes->links()}}
-
-    <?php
-    echo microtime(true) - $time;
-
-    ?>
 @endsection

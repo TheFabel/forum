@@ -22,7 +22,7 @@
                                     $time = $comment->date;
                                     $date = new DateTime();
                                     $date->setTimestamp($time);
-                                    echo $date->format("m-d-Y H:i:s");
+                                    echo $date->format("d-m-Y H:i:s");
                                 ?>
                             </small></p>
                             <div class="">
